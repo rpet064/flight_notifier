@@ -3,7 +3,7 @@ import pandas as pd
 import random
 from date_manager import DateManager
 
-HEADERS = {"apikey": "9ALMvuZsoHoMKdiCAyOD2p6186wSw1-k"}
+HEADERS = {"apikey": f"{os.getenv('API_KEY')}"}
 tequila_endpoint = "http://tequila-api.kiwi.com/"
 query_endpoint = "locations/query"
 search_endpoint = "v2/search"
